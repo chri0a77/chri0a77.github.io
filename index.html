@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<title>1.0</title>
+<style>
+body {
+  background-color : #29335C;
+  font-family : sans-serif;
+  font-size: 200%;
+}
+.center {
+  text-align: center;
+padding-top: 100px;
+}
+
+img {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   border-style: dotted;
+   border-width: thick;
+   border-color: white;
+}
+
+.w3-circle{border-radius:50%}
+
+h1 {
+  color : #F3A712;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #669BBC;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+li {
+    float: left;
+    display: table-cell;
+
+}
+
+li a {
+    display: block;
+    color: #29335C;
+    text-align: center;
+    padding: 20px 50px;
+    padding-left: 20px;
+    text-decoration : none;
+}
+
+li a:hover {
+    background-color: #E4572E;
+}
+</style>
 </head>
 
 <body>
-<style>
-  .center : {
-    font-size : 200%;
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }
-  </style>
+  <ul id="horizontal-style">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+<div class="center">
+  <h1><b>Velkommen!</b></h1>
+</div>
 
+<img src="https://www.publicdomainpictures.net/pictures/260000/velka/three-horses-1528527029qkz.jpg" class="w3-circle" alt="Horses">
 
-<h1 class="center">Velkommen!</h1>
 </body>
-
 </html>
