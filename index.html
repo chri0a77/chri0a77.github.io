@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-<title>TITEL</title>
+<title>TITLE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+  <style>
+  body {
+    background-color : #E71D36;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    height: 90vh;
+  }
+</style>
+
+<script>
+function invert() {
+  if (document.getElementsByTagName("BODY")[0].style.filter == "invert(100%)") {
+document.getElementsByTagName("BODY")[0].style.filter = "invert(0%)"  }
+  else {
+    document.getElementsByTagName("BODY")[0].style.filter = "invert(100%)";
+  }
+}
+</script>
 </head>
 <body>
-<div id="canvas" class="vertical_flex">
-  <div id="top_bar" class="horizontal_flex">
-    <ol>
-      <li>"1"</li>
-      <li>"2"</li>
-    </ol>
-  </div>
-  <div id="images" class="horizontal_flex">
-  </div>
-
-</div>
-</body>
+<img onclick="invert()" src="https://www.publicdomainpictures.net/pictures/270000/velka/vintage-travel-poster-chicago.jpg"></img>
 </html>
+
